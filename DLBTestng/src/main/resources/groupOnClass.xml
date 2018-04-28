@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="groups">
+    <test name="runAll">
+        <classes>
+            <class name="com.dlb.testng.groups.GroupsClass1"/>
+            <class name="com.dlb.testng.groups.GroupsClass2"/>
+            <class name="com.dlb.testng.groups.GroupsClass3"/>
+            <class name="com.dlb.testng.groups.GroupsOnMethods"/>
+        </classes>
+    </test>
+    <test name="Onlyrunstu">
+        <groups>
+            <run>
+                <include name="stu"/>
+                <include name="server"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.dlb.testng.groups.GroupsClass1"/>
+            <class name="com.dlb.testng.groups.GroupsClass2"/>
+            <class name="com.dlb.testng.groups.GroupsClass3"/>
+            <class name="com.dlb.testng.groups.GroupsOnMethods"/>
+        </classes>
+    </test>
+</suite>

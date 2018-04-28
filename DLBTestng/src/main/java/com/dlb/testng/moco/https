@@ -1,0 +1,9 @@
+试用keytool生成证书，因为keytool是java环境下的安全钥匙和证书管理工具，证书生成首先需要有java环境，然后进入java.exe路径下
+
+keytool -genkey -keyalg RSA -keysize 1024 -validity 365 -dname "CN=llz, OU=cvte,O=seewo, L=guangzhou, ST=guangdong, C=CN"-alias csii_key -keypass 888888 -keystore csii.jks -storepass 123456
+
+java -jar moco-runner-0.12.0-standalone.jar https  -p 12346 -c pro.json --https test.cer
+ --cert mocohttps --keystore mocohttps
+
+  java -jar moco-runner-0.12.0-standalone.jar https -p 443 -c pro.json --https csii.jks
+  --cert 888888 --keystore 123456

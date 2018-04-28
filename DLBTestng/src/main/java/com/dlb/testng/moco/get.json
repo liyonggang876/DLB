@@ -1,0 +1,26 @@
+[
+  {
+    "description":"这是一个get请求",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"this get method"
+    }
+  },
+  {
+    "description":"this is with param get",
+    "request":{
+      "uri":"/getparm",
+      "method":"get",
+      "queries":{
+        "name":"zhangsan",
+        "age":"10"
+      }
+    },
+    "response":{
+      "text":"this is get with para"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "description":"这是一个post请求",
+    "request":{
+      "uri":"/postdemo",
+      "method":"post"
+    },
+    "response":{
+      "text":"this is post method"
+    }
+  },
+  {
+    "description":"this is post parm",
+    "request":{
+      "uri":"/postparm",
+      "method":"post",
+      "forms":{
+        "name":"zhangsan",
+        "age":"10"
+      }
+    },
+    "response":{
+      "text":"this is post parem"
+    }
+  }
+]
